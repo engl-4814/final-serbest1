@@ -1,0 +1,75 @@
+/*Typography*/
+@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Oswald:wght@500&display=swap');
+
+h1 {font-size: 3rem; font-family: Oswald;}
+h2 {font-size: 2rem; font-family: Mukta;}
+a {font-size: 1.5rem; font-family: Mukta;}
+p {font-size: 1.25rem; font-family: Mukta;}
+h4 {font-size: 1rem; font-family: Mukta;}
+
+/* HOME PAGE */
+.home_body{
+  display: grid;
+  grid-auto-flow: row;
+  background-color: #5C5647;
+}
+
+.home_header{
+  display: flex;
+  justify-content: center;
+}
+
+.home_nav, .home_footer{
+  display: flex;
+  justify-content: space-around;
+  border: 10px solid black;
+}
+
+a {
+  color:black;
+}
+
+.origin, .home_aside{
+  padding: 20px;
+}
+
+
+@media (max-width: 750px){
+  .home_main{
+    display: flex;
+    flex-direction: column;
+  }
+  .image1 > img{
+    width: 300px;
+  }
+  .image1{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+}
+
+@media (min-width: 750px){
+  .home_main{
+    display: flex;
+    flex-direction: row;
+  }
+  .image1 > img{
+    width: 400px;
+    padding: 20px;
+  }
+  
+}
+
+/* SIDE BODE (SIDE PAGES) */
+.side_body{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #5C5647;
+}
+
+.img1{
+  padding: 70px;
+  max-width: 200px;
+}
